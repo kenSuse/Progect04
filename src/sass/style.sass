@@ -1,25 +1,138 @@
-@import "resets.scss"
 @import "normalizes.scss"
+@import "resets.scss"
 
-$main-color: #F28B64
-$background-color: #EDEDED
+$color-blue: #5290EA
+$color-orange: #F28B64
+$color-grey: #E2E2E2
 
-@mixin box
-    width: 300px
-    height: 300px
-    background-color: $background-color
-/* body */
 .container
-    width: 1400px
+    max-width: 1140px
     margin: 0 auto
-.block
-    display: flex
-    justify-content: space-between
-    padding-top: 20px
-.block-box
-    @include box
-    &__text
-        color: $main-color
-        font-size: 32px
-        text-align: center
+/* main-section */
+.main-section
+    height: 800px
+    background: #F0F0F0
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+        padding-top: 16px
+    &__logo
+        width: 134px
+        padding-left: 23px
+    &__content-container
+        display: flex
+        flex-direction: row
+        position: relative
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 64px
+        font-size: 18px
+        &:last-child
+            margin-right: 0px
+    &__list-link
+        text-decoration: none
+        color: #000
 
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        position: absolute
+        z-index: 2
+        top: 150px
+        left: -50px
+        width: 565.95px
+        height: 220px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-64deg)
+    &__rectangle-orange
+        position: absolute
+        z-index: 3
+        top: 152px
+        left: -26px
+        width: 618.43px
+        height: 220px
+        background: $color-orange
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-50.81deg)
+    &__rectangle-grey
+        position: absolute
+        z-index: 1
+        top: 190px
+        left: 10px
+        width: 608.97px
+        height: 220px
+        background: $color-grey
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        transform: rotate(-36.15deg)
+
+.right-wrapper
+    width: 372px
+    position: absolute
+    top: 150px
+    right: 76px
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
+    &__text
+        font-size: 16px
+        margin-bottom: 20px
+.icons
+    display: flex
+    flex-direction: row
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 100px
+        margin-right: 17px
+        &:last-child
+            margin-right: 0px
+        i
+            font-size: 21px
+.title
+    position: relative
+    font-size: 72px
+    &__hr
+        width: 65px
+        position: absolute
+        bottom: 0px
+        margin: 0px
+        border: none
+        border-top: 1px solid black
+.buttons
+    display: flex
+    &__main-btn
+        margin-right: 32px
+        width: 200px
+        height: 60px
+        background: $color-orange
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        border: none
+        font-size: 18px
+        color: #FFFFFF
+    &__icon-btn
+        display: flex
+        align-items: center
+        img
+            margin-right: 12px
+    &__text
+        font-size: 16px
