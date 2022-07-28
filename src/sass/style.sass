@@ -1,11 +1,28 @@
 @import "normalizes.scss"
 @import "resets.scss"
 
+@font-face
+    font-family: "MontseratT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face
+    font-family: "MontseratT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
 $color-blue: #5290EA
 $color-orange: #F28B64
 $color-grey: #E2E2E2
 
+html
+    font-family: "MontseratT"
+    font-weight: regular
+
 .container
+    position: relative
     max-width: 1140px
     margin: 0 auto
 /* main-section */
@@ -49,6 +66,7 @@ $color-grey: #E2E2E2
     &__list-link
         text-decoration: none
         color: #000
+        font-weight: bold
 
 .left-wrapper
     position: relative
@@ -124,6 +142,7 @@ $color-grey: #E2E2E2
 .title
     position: relative
     font-size: 72px
+    font-weight: bold
     &__hr
         width: 65px
         position: absolute
@@ -131,6 +150,8 @@ $color-grey: #E2E2E2
         margin: 0px
         border: none
         border-top: 1px solid black
+        &-third
+            top: 70px
 
 .buttons
     display: flex
@@ -144,6 +165,7 @@ $color-grey: #E2E2E2
         border: none
         font-size: 18px
         color: #FFFFFF
+        font-weight: bold
     &__icon-btn
         display: flex
         align-items: center
@@ -222,6 +244,7 @@ $color-grey: #E2E2E2
         position: absolute
         top: 150px
         right: -50px
+        font-weight: bold
 
 .icons-item
     display: inline-flex
@@ -234,3 +257,55 @@ $color-grey: #E2E2E2
         font-size: 18px
         span
             font-size: 48px
+            font-weight: bold
+
+/* third-sectio */
+.third-section
+    position: relative
+    min-height: 640px
+    background: #F0F0F0
+    overflow: hidden
+    z-index: 0
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding-top: 46px
+    &__left-wrapper
+        padding-left: 167px
+    &__right-wrapper
+        max-width: 480px
+    &__right-title
+        margin-bottom: 20px
+        line-height: 65px
+    &__text
+        font-size: 18px
+        margin-bottom: 30px
+    &__first-elipse
+        position: absolute
+        top: 140px
+        left: 110px
+        z-index: -1
+    &__figur
+        position: absolute
+        top: 210px
+        z-index: -1
+    &__second-elipse
+        position: absolute
+        top: -120px
+        right: -120px
+
+/* footer */
+.footer
+    &__img
+        position: absolute
+        left: -250px
+        bottom: 0px
+    &__container
+        min-height: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__title
+        margin-bottom: 20px
