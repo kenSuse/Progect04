@@ -512,6 +512,7 @@ html {
   border: 1px solid #5290EA;
   border-radius: 100px;
   margin-right: 17px;
+  cursor: pointer;
 }
 .icons__item:last-child {
   margin-right: 0px;
@@ -551,6 +552,7 @@ html {
   font-size: 18px;
   color: #FFFFFF;
   font-weight: bold;
+  cursor: pointer;
 }
 .buttons__icon-btn {
   display: flex;
@@ -558,6 +560,7 @@ html {
 }
 .buttons__icon-btn img {
   margin-right: 12px;
+  cursor: pointer;
 }
 .buttons__text {
   font-size: 16px;
